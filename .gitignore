@@ -1,0 +1,55 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+secrets/
+credentials.json
+.sonar-config.json
+
+# Claude Code local-only files (settings.json stays tracked)
+.claude/settings.local.json
+.claude/*.local.*
+
+# Tool output
+graphify-out/
+.scannerwork/
+.sonarlint/
+coverage/
+*.log
+logs/
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.turbo/
+target/
+bin/
+obj/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*~
+.vscode/*
+!.vscode/settings.json

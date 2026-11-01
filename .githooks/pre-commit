@@ -1,0 +1,2 @@
+#!/bin/sh
+trufflehog git file://. --since-commit HEAD --only-verified --fail --no-update
