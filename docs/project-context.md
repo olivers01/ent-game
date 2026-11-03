@@ -1,63 +1,29 @@
-# Project context: enterprise gamification class project
+# Project Context: Enterprise Gamification
 
-Background notes from the planning chat (2026-11-01). Nothing is built yet and no stack is confirmed.
+> **Doc convention:**
+> - [course-outline.md](./course-outline.md) holds the **original course guidelines, deliverables, grading rubric, and timeline** — keep it unchanged as the source of truth.
+> - [project-ideas.md](./project-ideas.md) is the **single living document** for project concepts — update it in place rather than creating separate idea files.
 
-## Open items
+## Team & Resources
 
-Not yet known; ask before planning scope:
+- **Group size:** 4 students.
+- **Role split:**
+  - **1 Developer:** Can build web apps, real-time room-code multiplayer tools, interactive workplace simulations, or live facilitator dashboards.
+  - **3 Creative / Research / Report Teammates:** Own scenario/card authoring, visual & UX assets, academic framework mapping (MDA, Octalysis, SDT, Flow, HEXAD), playtest facilitation, and the 15-page report.
+- **Business context option:** Can anchor the organizational setting and pain points in an anonymized version of a real part-time workplace.
+- **Tech stack:** Undecided until the final concept is chosen (no mandatory stack from the course).
 
-- Deadline, and whether the project is solo or group work.
-- Any required language, framework or documentation format.
-- How it is graded.
+## Key Design Principles Agreed So Far
 
-## Idea
+1. **Real-world enterprise scalability:** Avoid 1-to-$N$ HR personality/culture profiling surveys where managers are expected to memorize custom communication manuals for every employee (unscalable in practice, prone to social-desirability bias, and problematic under GDPR / *Betriebsrat*).
+2. **True game mechanics over "pointsification":** Avoid slapping XP and badges onto passive HR compliance checklists. Mechanics must create meaningful choices, feedback loops, and intrinsic motivation (Autonomy, Competence, Relatedness).
+3. **Built for Week 12 live playtesting:** Whatever we build—even if the enterprise version spans weeks—must have a self-contained **15–20 minute playable slice** for classmates in Week 12.
+4. **Pick the best medium for the concept:** Use code where software creates real scalability and classroom "wow" (e.g., QR-code multiplayer voting, simulated Slack/Inbox state, live crisis/market tickers), or combine digital + tabletop where face-to-face negotiation shines.
+5. **Academic & source integrity:** Every cited framework or cultural model (e.g., MDA, SDT, Flow, Octalysis, HEXAD, Meyer, Hofstede, Edmondson) must be verified against primary academic publications before inclusion in the report or essays.
 
-An onboarding quest app for new hires joining an international team, with a cross-cultural collaboration module (US and Japan) as the showpiece.
+## Open Decisions
 
-Other ideas considered, in order of fit:
-
-1. **Cross-cultural collaboration.** A branching scenario simulator: the player is a US manager working with a Tokyo team, and choices cover feedback, saying no, meetings and missed deadlines. A trust meter shows consequences, and each outcome has a short explanation. Possible extras: a role-swap mode, scored email rewrites, and a two-player mode.
-2. **Remote team building.** Cooperative puzzles, weekly quests, a coffee-roulette matcher, and async games that respect time zones. Participation is optional and scoring is team-based.
-3. **Remote work motivation and focus.** Voluntary focus sessions, personal streaks and self-reported reflection logs. No screen monitoring, no activity tracking and no time-online rankings.
-
-## Recommended scope
-
-1. **Core:** quest engine with XP, badges and progress, plus an admin page for creating quests and setting point values.
-2. **Showpiece:** the US-Japan scenario simulator with 5-8 scenarios.
-3. **Extras, only if time allows:** coffee-roulette matching and team goals.
-
-## Mechanics every version needs
-
-- An append-only points ledger (user, event, points, timestamp). Totals and levels are derived from it, so bugs and cheating are traceable.
-- A rules table for badges and quests, with conditions stored as data.
-- An admin view so managers can configure quests without code.
-- Unit tests for the rules engine.
-
-## Proposed stack (unconfirmed)
-
-| Layer | Choice |
-|---|---|
-| Language | TypeScript |
-| Framework | Next.js (React) |
-| Database | PostgreSQL |
-| ORM | Drizzle or Prisma |
-| Auth | Auth.js or Supabase Auth |
-| UI | Tailwind CSS with shadcn/ui |
-| Hosting | Vercel for the app, Supabase or Neon for Postgres |
-| Tests | Vitest for logic, Playwright for one end-to-end flow |
-
-Scenarios are stored as JSON or YAML (nodes, choices, consequences, explanations). Start with multiple-choice scoring. An LLM scoring free-text email rewrites is optional and comes last: it adds API cost, needs rate limiting and a fallback, and its output must be checked.
-
-Python with Django is an alternative that covers auth, ORM and an admin panel in one framework.
-
-## Design and ethics notes
-
-- Present cultural patterns as tendencies with individual variation, and include "it depends" outcomes, to avoid stereotyping. Have someone with real experience review the scenarios if possible.
-- Candidate sources for the content: Erin Meyer's *The Culture Map* and Hofstede's dimensions. Verify specifics against the sources before using them.
-- Avoid manipulative patterns such as constant leaderboard pressure and mandatory streaks. Address fairness, privacy and burnout in the write-up.
-- Reference a design framework (Octalysis or MDA) in the documentation.
-
-## Not verified
-
-- Cultural content comes from general knowledge and has not been checked against the sources.
-- Free-tier limits and tool version compatibility have not been checked.
+- [ ] Lock in **1 final project concept** with the team (see [project-ideas.md](./project-ideas.md) for Week 3 topic approval).
+- [ ] Confirm exact calendar dates for **Week 3 / Week 6 / Week 9 / Week 12 / Week 13 / Weeks 14–15**.
+- [ ] Decide whether to anchor the business case in the anonymized part-time company or a specific target industry.
+- [ ] Once the concept is locked, confirm the prototype medium and (if coded) the tech stack.
