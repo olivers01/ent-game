@@ -2,7 +2,7 @@
 
 *Literature review backing the concepts in [project-ideas.md](../project-ideas.md), checked against the rubric in [course-outline.md](../course-outline.md). Researched 2026-11-03.*
 
-> **Status:** Complete. **Recommendation: Concept 3, *Incident Zero*** (see [section 6](#6-recommendation)). Runner-up: Concept 1, *The Unwritten Rules*.
+> **Status:** Complete. **Proposed concept: Concept 1, *The Unwritten Rules*, framed as an onboarding kickoff for new hires joining an international team.** On evidence alone, *Incident Zero* scored slightly higher (see [section 6](#6-recommendation)), but it was set aside as too artificial and outside the group's onboarding and culture interest. Section 6 lists what *The Unwritten Rules* must get right.
 
 ## How references were verified
 
