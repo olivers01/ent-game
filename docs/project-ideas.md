@@ -1,97 +1,132 @@
-# Project Ideas (Combined Shortlist)
+# Project Concept: Knowledge Sharing in Remote Teams
 
-*Single living document for project proposals. Update this file in place as the team narrows down and refines the final choice.*
+*Single living document for our chosen project concept. Update it in place as the design develops. General gamification evidence, frameworks and measurement instruments are in [research/project-ideas-evidence.md](./research/project-ideas-evidence.md).*
 
-The original 8 ideas have been combined where they overlap or fix each other's weaknesses. **Nothing was dropped:** every original idea lives on inside one of the 5 concepts below, and each combined concept notes which part can still run on its own.
+The concept is checked against [course-outline.md](./course-outline.md) and [project-context.md](./project-context.md):
+- **Scalable in real companies:** no personality profiling, and no XP stuck onto checklists.
+- **Playable by classmates** as a self-contained 15–20 minute slice for the Week 12 playtest.
+- **Defensible on the rubric:** a clear theory link, coherent mechanics, and a good answer to "isn't this just X?" in Q&A.
+- **Balanced for our team:** 1 developer and 3 creative/research/report teammates.
 
-All concepts are checked against [course-outline.md](./course-outline.md) and [project-context.md](./project-context.md):
-- **Scalable in real companies** (no "manager memorizes 12 employee profiles" surveys, no XP slapped onto checklists).
-- **Playable by classmates** in a self-contained 15–20 minute slice for the Week 12 playtest.
-- **Defensible on the rubric:** clear theory link, coherent mechanics, a good answer to "isn't this just X?" in Q&A.
-- **Balanced for our team** (1 developer + 3 creative/research/report teammates).
+*A cooperative "hidden information" mission · printed role cards + team chat on phones · teams of 4*
 
-| Original idea | Now part of |
+| | |
 |---|---|
-| Charter Clash | 1. *The Unwritten Rules* |
-| The Unwritten Rules | 1. *The Unwritten Rules* |
-| First Week in the Wild | 2. *First Week in the Wild* |
-| Day One Cold Case | 2. *First Week in the Wild* |
-| Incident Zero | 3. *Incident Zero* |
-| Silo Breakers | 3. *Incident Zero* |
-| Pitch Pit | 4. *Pitch Pit* (refined) |
-| Shadow AI Dilemma | 5. *Shadow AI Dilemma* (refined) |
+| Problem well documented | Moderate |
+| Evidence the game would work | Moderate |
+| Dev effort | Low–medium |
+| Writing effort | Medium (cases need careful design and pilot-testing) |
+| Main issue | The puzzle must be hard enough; "remote" is the setting rather than the cause |
 
----
+## Workplace problem
 
-## 1. *The Unwritten Rules* — Hidden-Norms Game That Ends in a Team Charter
-- **Combines:** *The Unwritten Rules* + *Charter Clash*.
-- **Why combine:** On its own, *Unwritten Rules* is close to the existing simulation *Barnga*, which stops at the debrief. On its own, *Charter Clash* is a team poll with no stakes or win condition. Played in sequence, the game creates real friction and the charter turns the insight into something the team keeps using.
-- **Domain:** Onboarding & multicultural / cross-functional teamwork.
-- **Medium:** Room-code web app (players on phones/laptops via QR code, shared screen on the projector).
-- **Business Problem:** Culturally diverse and hybrid teams lose months to unspoken friction (blunt vs. indirect feedback, public vs. private disagreement, late deadline flags). People understand cultural differences from slide decks but revert to habit and blame teammates ("they're rude" / "they're evasive") under pressure. Personality surveys don't fix this because managers can't memorize individual manuals.
-- **How It Plays (~20 min):**
-  1. **Play (~10 min):** Groups of 3–4 work on a product-launch prioritization task. Each player's screen secretly enforces different communication rules and point penalties (Player A loses points whenever anyone is contradicted publicly; Player B loses points for ambiguous commitments; Player C must defer to seniority). The rules are fictional and never tied to real nationalities.
-  2. **Reveal (~3 min):** The projector shows every rulebook side by side, plus the moments where the rules collided.
-  3. **Commit (~5 min):** The *Charter Clash* phase. For each friction point (e.g., "How do we disagree?"), everyone taps their instinctive answer **and predicts how the room will split**. The anonymous split graph is revealed, correct predictions score points, the group debates for 90 seconds, then votes on one shared team rule. Ends with an exported **1-page Team Charter**.
-- **Standalone option:** The charter phase alone (6 dilemma rounds, ~15 min) works as a lightweight kickoff tool for real teams that can't spare time for the full game.
-- **KPIs:** Time-to-team-alignment, cross-site rework/escalation rate, Day-30 psychological safety pulse score. **Measurable in the Week 12 playtest:** ask players "Why did your teammate do X?" before and after, and check whether answers shift from personality ("rude", "evasive") to rules and context.
-- **Theory & Ethics:** Kolb's Experiential Learning Cycle (experience → reflect → apply), SDT (*Relatedness* in play, *Autonomy* in rule-setting), MDA (*Discovery* aesthetic at the reveal), Fundamental Attribution Error, Hall (High/Low Context), Meyer's *Culture Map* for the norm dimensions; Hofstede only alongside its published critiques (e.g., McSweeney, 2002). Ethics: no nationality stereotyping, no stored personal profiles (GDPR / *Betriebsrat*), anonymous charter answers.
+On days employees work from home, they report less informal communication and less knowledge sharing with colleagues, which goes with lower same-day team commitment (Lütjens & Felfe, 2026; diary study, 219 employees, 1,655 days). Remote workers with fewer personal interactions felt lonelier, which lowered task performance and helping. Virtual social contact during work hours buffered this (Cho et al., 2025; 170 employees, collected during COVID-19). Remote work isn't only negative: working from home was linked to better concentration and performance (Toscano et al., 2025). So the problem is *lost exchange of information*, not remote work as such.
 
----
+**Our framing:** teams lose knowledge that only one member holds, especially when they are distributed and mixed. We train teams to notice and fix that, and the debrief is the intervention.
 
-## 2. *First Week in the Wild* — Onboarding Sim With a Cold Case to Crack
-- **Combines:** *First Week in the Wild* + *Day One Cold Case*.
-- **Why combine:** Both need the same build: a simulated Slack / email / wiki / ticket workspace. On its own, *First Week* lacks a clear goal and needs a lot of branching story. On its own, *Cold Case* is a puzzle without day-to-day pressure. Together, the cold case gives the week a goal, and the inbox gives the investigation stakes.
-- **Domain:** Employee onboarding + cross-cultural communication.
-- **Medium:** Desktop web app (simulated workspace) played in pairs, with optional printed clue/role cards.
-- **Business Problem:** New hires skim handbooks, don't know who actually owns what, hesitate to reach out to strangers or push back on seniors, and misread cues across global offices, while managers lack time to coach them one by one.
-- **How It Plays (~20 min slice):** Pairs of "Day-1 hires" get one task from their lead: *find out why the Q3 release shipped upside-down pricing in two regions, by Friday.* The 5-day week is compressed into 5 rounds. Each round, the pair spends limited **Focus Blocks** between digging through tickets, wiki pages and Slack history, and answering incoming messages (a blunt lead, an indirect overseas partner, two seniors who contradict each other). Limited **Coffee Chat Tokens** let them interview colleagues for tribal knowledge, so choosing whom to ask is itself the lesson. Hidden **Trust** and **Clarity** scores react to how they handle messages, and misread messages can send them down false leads. Ends with a **Causality Timeline** showing the real incident chain next to the pair's own decisions.
-- **Standalone option:** Either half works alone: the investigation only (less writing), or the inbox survival only (no puzzle).
-- **KPIs:** Time-to-first-autonomous-task, cross-team contacts made in Month 1, reduction in Month-1 manager coaching hours, documentation retention vs. standard onboarding.
-- **Theory & Ethics:** SDT (*Competence* through safe failure, *Relatedness* through coffee chats), Octalysis CD7 (Unpredictability & Curiosity), Flow, Kolb, HEXAD (Free Spirits & Achievers). Ethics: training sim vs. covert performance assessment, so scores are never shared with managers; no streaks or mandatory completion pressure.
-- **Scope note:** Heaviest writing load on the list (case files, messages, characters). The writers carry most of it; the developer builds one reusable workspace UI driven by a content file. The case is one-shot, so a real company would rotate cases per onboarding cohort.
+## How it plays (~18 min)
 
----
+Players sit apart and may only communicate in their team's chat, which simulates remote work and gives us a log to analyse.
 
-## 3. *Incident Zero* — Crisis Game Where Every Department Has a KPI to Protect
-- **Combines:** *Incident Zero* + *Silo Breakers*.
-- **Why combine:** Both use four asymmetric department roles and a shared company meter. *Silo Breakers*' private KPIs give every player a reason to act selfishly during the crisis, so the Blame Trap becomes pressure on the whole table instead of one player's secret. *Incident Zero* gives *Silo Breakers* a vivid, time-pressured scenario and gives the developer a real job (the live dashboard).
-- **Domain:** Operations, cross-department alignment & psychological safety.
-- **Medium:** Digital-tabletop hybrid (live crisis dashboard on the projector + physical confidential role packets).
-- **Business Problem:** Departments hit their own KPIs while hurting the company (Sales overpromises custom features, Engineering hoards capacity, Ops blocks changes). During real incidents, people hide early mistakes out of fear of blame until they explode, and 40-page crisis playbooks go unread.
-- **How It Plays (~15–20 min):** Four roles (**Engineering**, **Support / Customer Success**, **Legal / Comms**, **Product / Sales**) handle an escalating outage over 4 phases. Each role has a **private KPI** (e.g., Support: ticket close time; Sales: keep the big client's launch date) and a secret in its packet; one role's team caused the bug. The dashboard tracks **Shared Company Health** (Cash, Stability, Customer Trust). Admitting a mistake early costs a little of your own KPI but unlocks the root-cause fix; hiding it risks a 3× cascade. If any shared track hits zero, *everyone loses*, including the personal KPI leader.
-- **Low-tech variant:** *Silo Breakers* as a pure board game across 4 calm business quarters (no outage), with a simple web calculator for quarter-end scoring.
-- **KPIs:** Mean Time to Escalate (MTTE) internal errors, near-miss self-reporting rate, cross-department handoff friction, SOP recall.
-- **Theory & Ethics:** Edmondson's *Psychological Safety*, Goodhart's Law, Social Interdependence Theory, Flow, Octalysis (CD1, CD5, CD8), MDA. Real-world precedent: incident tabletop exercises and blameless post-mortems in software operations. Ethics: stress-testing vs. inducing anxiety, a strictly blameless debrief, and a direct critique of toxic competitive leaderboards.
+1. **Roles (2 min).** Each player gets a role card (Sales, Finance, IT, Project Manager) with private facts. Cards can't be shown, only typed out.
+2. **Mission 1 (4 min).** The team must choose a platform for a client event. The task is built as a *hidden profile*: the information everyone shares points to the wrong answer, and only the facts each person holds alone point to the right one. Example: every card says Platform C has the best reviews and a one-day setup. Only Finance knows C costs €350 against a €300 budget. Only Sales knows the client needs 100+ seats, which rules out B (80). Only IT knows A seats 120. Only the PM knows the setup slots are Wednesday and Thursday, which fits A's two-day setup. Correct answer: A.
+3. **Mini-debrief (3 min).** The projector shows which private facts were never posted, and each team's "coverage" (share of private facts mentioned).
+4. **Mission 2 (4 min).** A harder case with more distractors. One teammate joins two minutes late and must be brought up to speed, which links to remote onboarding.
+5. **Final debrief (5 min).** Compare coverage and correctness across missions; discuss what made people post or hold back.
 
----
+**Scoring.** Team-only, rewarding accuracy and coverage rather than speed: correct decision, correct reasons, every member contributed a private fact, then a small bonus for finishing in time. Score useful contributions, never message counts.
 
-## 4. *Pitch Pit* — Live Prediction Market for Employee Ideas
-- **Domain:** Strategy & Innovation Management *(directly targets "innovation inertia" from [course-outline.md](./course-outline.md))*.
-- **Medium:** Mobile trading web app + live projector stock ticker.
-- **Business Problem:** Corporate idea portals get little engagement because ideas vanish into slow committees and office politics pick the winners.
-- **How It Plays (~20 min):** Trios draw a **Pain Point card** and a **Constraint card** (*"Zero new hires"*, *"Ship in 14 days"*) and have 3 minutes to shape a 3-bullet pitch. Pre-written cards keep the slice on time instead of relying on classmates to invent ideas from scratch. Everyone gets **1,000 Innovation Credits** in the mobile app (code-enforced: *cannot invest in your own team*). Mid-round, the projector drops a **Market Shock Event** (*"30% budget cut"*, *"EU AI audit"*), opening a 3-minute window for 140-character pivots and live portfolio trading. Top ideas win **2-Week Protected Sandbox Time** rather than cash.
-- **KPIs:** Idea submission rate, cross-department backing diversity, pilot conversion rate, decision cycle time.
-- **Theory & Ethics:** Octalysis (CD3, CD4 Ownership, CD6 Scarcity), SDT *Autonomy*, Overjustification Effect (why autonomy beats cash bonuses). Ethics: anonymous early trading to prevent popularity bias.
+## Workplace version
 
----
+A recurring 15-minute team mission in Teams or Slack during remote onboarding or team kickoffs, with the debrief as the core. Cases rotate and use the company's own decisions.
 
-## 5. *Shadow AI Dilemma* — Practical AI Adoption & Data-Risk Game
-- **Domain:** Change Management, AI Enablement & Data Privacy.
-- **Medium:** Fast multiplayer web app (or card + web hybrid).
-- **Business Problem:** Employees paste confidential client or HR data into public AI tools ("Shadow AI") to save time, or avoid AI completely, because 30-page compliance PDFs are unreadable.
-- **How It Plays (~15–20 min):** Teams race through realistic **Workday Shortcut Scenarios** (*"Summarize 40 customer calls by 2 PM"*, *"Debug proprietary pricing code"*), playing **Tool + Workflow Cards** (Approved Sandbox, Anonymize-First, Public LLM, Manual) to maximize **Hours Saved**. Rival teams can hit **"Audit!"** on their phones if they spot a hidden GDPR, IP, or hallucination landmine. A wrong audit costs the auditor points, and a caught team wins back half its loss by naming the safe workflow, so being caught becomes a learning moment instead of a pure gotcha.
-- **KPIs:** Reduction in data-loss prevention (DLP) policy violations, adoption rate of approved AI tools, scenario judgement accuracy.
-- **Theory & Ethics:** Fogg Behavior Model (teaching *safe* high-ability shortcuts instead of blanket bans), SDT *Competence*. The core choice is a real speed-vs-risk trade-off, which keeps it from becoming a compliance quiz with points. Ethics: AI surveillance, deskilling, and peer-policing dynamics.
+Not a standing app with badges for "virtual coffees": rewarding social contact with badges risks the overjustification effect (Deci et al., 1999) and "forced fun" (Mollick & Rothbard, 2014).
 
----
+## What the research says
 
-## Comparison
+- Groups reliably discuss information they already share and miss what only one member knows (Stasser & Titus, 1985). Across 65 studies, hidden-profile groups were eight times less likely to find the right answer than groups with full information. How much private information got mentioned predicted decision quality (Lu et al., 2012).
+- The effect also appears in real teams: in medical teams diagnosing cases, information only one member held came up later and less often (Larson et al., 1998).
+- Across 72 studies (about 17,000 people), information sharing predicted team performance, cohesion and satisfaction. Cooperation, structured discussion and tasks with a provable answer increased sharing. Spreading information across members, depending on each other's information, and differences between members reduced it (Mesmer-Magnus & DeChurch, 2009). That second list describes a mixed, distributed team, and the first list is what the game and debrief build in.
+- Groups shared more private information when everyone knew who the expert for each area was (Stasser et al., 1995). Our public role names (Sales, Finance, IT, PM) therefore make the task easier, so the case design has to compensate.
+- Team training has moderate positive effects on how teams think, feel, work together and perform (Salas et al., 2008).
+- Competition inside a group makes members hide information (Toma & Butera, 2009), which supports team-only scoring.
+- Teammates and a meaningful story raised relatedness; badges, leaderboards and performance graphs raised competence instead (Sailer et al., 2017). If the goal is connection, cooperative mechanics fit better than points.
+- Progress bars and leaderboards raised short-term contribution versus no gamification (Karabiber & Gürol, 2026; N = 219). This was short-term participation, not lasting collaboration.
 
-| # | Concept | Combines | Topic | Medium | Classmates play it for real? | Dev effort | Writing effort | Main risk |
-|---|---|---|---|---|---|---|---|---|
-| **1** | **The Unwritten Rules** | Unwritten Rules + Charter Clash | Multicultural teamwork | Room-code web app + projector | Yes, the friction is real | Medium | Medium (rulebooks, dilemmas) | Showing it's more than *Barnga* (the charter phase is the answer) |
-| **2** | **First Week in the Wild** | First Week + Cold Case | Onboarding | Simulated workspace, played in pairs | Yes, as role-played new hires | Medium–High | High (case, messages, characters) | Content scope |
-| **3** | **Incident Zero** | Incident Zero + Silo Breakers | Crisis, silos, psych safety | Dashboard + role packets | Yes | Medium | Medium (role packets, events) | Balancing private KPIs vs. shared meter needs several playtests |
-| **4** | **Pitch Pit** | — | Innovation | Mobile wallet + live ticker | Partly (card-based pitches) | Medium | Low–Medium (cards, shocks) | Tight 20-minute timing |
-| **5** | **Shadow AI Dilemma** | — | AI adoption & data risk | Multiplayer web / cards | Yes, most students use AI tools | Low–Medium | Medium (scenarios) | Sliding into a compliance quiz |
+## Risks
+
+- Communication medium did *not* affect information pooling in the meta-analysis (Lu et al., 2012). The chat-only rule adds realism and a log, but we can't claim remote work causes the failure. The lesson is about pooling private knowledge, with remote work as the setting.
+- If the case is too easy (like the example without the shared misleading facts), teams solve it in 30 seconds and the game teaches nothing. The cases need pilot-testing.
+- In a quick lookup we found no controlled study showing that a hidden-information game makes people share more at work afterwards. This is a gap we can name in the report, but it means we can't claim workplace impact. A full search is still to do.
+- Classmates already know each other and sit in one room, so we can't test "connectedness" meaningfully.
+
+## What we must get right
+
+- Design each case as a real hidden profile and pilot it on a few people first.
+- Enforce the chat-only rule (separate seating, or a projector timer and a referee).
+- Make the mini-debrief show the unshared facts, since the debrief carries most of the learning.
+
+## Week 12 measure
+
+From the chat logs: coverage of private facts and decision correctness in Mission 1 vs. Mission 2. After play: short ratings of engagement, perceived collaboration, and "did anything feel forced?".
+
+## Theory
+
+- **Hidden-profile paradigm** (Stasser & Titus, 1985; Lu et al., 2012).
+- **SDT:** relatedness through teammates, competence through the second mission.
+- **MDA:** mechanic (split information) → dynamic (forced sharing) → aesthetic (fellowship and challenge).
+- **Hexad:** Socialisers and Philanthropists via sharing and helping, Achievers via the harder mission, Free Spirits via choosing how to solve it.
+
+## Ethics
+
+In a workplace version, logs stay with the team and only aggregated results go further. No individual "sharing scores" for managers.
+
+| Risk | Design answer |
+|---|---|
+| People feel pressured to take part | Voluntary, with no link to performance reviews |
+| Quieter people feel uncomfortable | Offer different ways to contribute, e.g. written as well as spoken |
+| Managers monitor behaviour | Collect little data; report only aggregates |
+| Competition creates pressure | Cooperative goals inside teams |
+| Interest fades after the novelty | Rotate cases and review regularly |
+| It becomes extra unpaid work | Keep it short and inside working hours |
+
+## Playtest design
+
+- **Compare like with like.** If we test a gamified version against a plain one, use two cases of equal difficulty and have half the groups play the gamified version first and half second. Otherwise differences could come from the task, the group, or simply practice.
+- **Change one thing at a time** where possible, so we know what caused a difference.
+- **Ask after play:** enjoyment (1–5), whether the game made people interact (1–5), whether they'd take part voluntarily (1–5), and "did any mechanic feel uncomfortable or forced?" (open answer).
+- **Report honestly.** One classroom session can't show lasting workplace change. Only report a design change if the playtest actually produced the feedback behind it.
+
+## General design rules
+
+**Build in:**
+- A structured debrief with a replay of what happened. Debriefs have the largest effects in the evidence: d = 0.67–0.92 (Tannenbaum & Cerasoli, 2013; Keiser & Arthur, 2021, 2022).
+- Teamwork inside teams, competition only between teams.
+- A realistic scenario rather than points for their own sake.
+
+**Leave out:**
+- Mandatory participation (Mollick & Rothbard, 2014).
+- Points, badges and leaderboards as the main mechanic. Expected rewards lower intrinsic motivation (d = −0.28 to −0.40; Deci et al., 1999).
+- Claims of lasting change from one 20-minute session.
+
+## Open questions
+
+- Ask the professor what "MVE" means. The rubric lists it next to MDA, but no gamification framework has that name. It may be a typo for MDE (Mechanics–Dynamics–Emotions; Robson et al., 2015).
+- Open every DOI once before citing it.
+
+## References
+
+All of the following were checked against Crossref on 4 Nov 2026. The general sources cited above (Deci et al., 1999; Keiser & Arthur, 2021, 2022; Mollick & Rothbard, 2014; Robson et al., 2015; Tannenbaum & Cerasoli, 2013) are listed in [research/project-ideas-evidence.md](./research/project-ideas-evidence.md).
+
+- Cho, S., Kim, S., Kim, S., & Lee, H. W. (2025). How remote workers manage loneliness and performance: Virtual social interaction as an alternative resource management strategy. *Human Resource Development Quarterly, 36*(2), 155–174. https://doi.org/10.1002/hrdq.21547
+- Karabiber, H., & Gürol, Y. D. (2026). Feedback, competition, and cooperation: Behavioral effects of gamification elements in individual and team settings. *Acta Psychologica, 266*, Article 106908. https://doi.org/10.1016/j.actpsy.2026.106908
+- Larson, J. R., Jr., Christensen, C., Franz, T. M., & Abbott, A. S. (1998). Diagnosing groups: The pooling, management, and impact of shared and unshared case information in team-based medical decision making. *Journal of Personality and Social Psychology, 75*(1), 93–108. https://doi.org/10.1037/0022-3514.75.1.93
+- Lu, L., Yuan, Y. C., & McLeod, P. L. (2012). Twenty-five years of hidden profiles in group decision making: A meta-analysis. *Personality and Social Psychology Review, 16*(1), 54–75. https://doi.org/10.1177/1088868311417243
+- Lütjens, D., & Felfe, J. (2026). Beyond where we work: Daily informal communication, knowledge sharing, and commitment in hybrid teams. *Administrative Sciences, 16*(2), Article 63. https://doi.org/10.3390/admsci16020063
+- Mesmer-Magnus, J. R., & DeChurch, L. A. (2009). Information sharing and team performance: A meta-analysis. *Journal of Applied Psychology, 94*(2), 535–546. https://doi.org/10.1037/a0013773
+- Sailer, M., Hense, J. U., Mayr, S. K., & Mandl, H. (2017). How gamification motivates: An experimental study of the effects of specific game design elements on psychological need satisfaction. *Computers in Human Behavior, 69*, 371–380. https://doi.org/10.1016/j.chb.2016.12.033
+- Salas, E., DiazGranados, D., Klein, C., Burke, C. S., Stagl, K. C., Goodwin, G. F., & Halpin, S. M. (2008). Does team training improve team performance? A meta-analysis. *Human Factors, 50*(6), 903–933. https://doi.org/10.1518/001872008X375009
+- Stasser, G., Stewart, D. D., & Wittenbaum, G. M. (1995). Expert roles and information exchange during discussion: The importance of knowing who knows what. *Journal of Experimental Social Psychology, 31*(3), 244–265. https://doi.org/10.1006/jesp.1995.1012
+- Stasser, G., & Titus, W. (1985). Pooling of unshared information in group decision making: Biased information sampling during discussion. *Journal of Personality and Social Psychology, 48*(6), 1467–1478. https://doi.org/10.1037/0022-3514.48.6.1467
+- Toma, C., & Butera, F. (2009). Hidden profiles and concealed information: Strategic information sharing and use in group decision making. *Personality and Social Psychology Bulletin, 35*(6), 793–806. https://doi.org/10.1177/0146167209333176
+- Toscano, F., González-Romá, V., & Zappalà, S. (2025). The influence of working from home vs. working at the office on job performance in a hybrid work arrangement: A diary study. *Journal of Business and Psychology, 40*(2), 497–512. https://doi.org/10.1007/s10869-024-09970-7

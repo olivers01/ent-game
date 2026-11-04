@@ -2,7 +2,7 @@
 
 > **Doc convention:**
 > - [course-outline.md](./course-outline.md) holds the **original course guidelines, deliverables, grading rubric, and timeline** — keep it unchanged as the source of truth.
-> - [project-ideas.md](./project-ideas.md) is the **single living document** for project concepts — update it in place rather than creating separate idea files.
+> - [project-ideas.md](./project-ideas.md) is the **single living document** for our chosen concept — update it in place rather than creating separate idea files.
 
 ## Team & Resources
 
@@ -18,12 +18,12 @@
 1. **Real-world enterprise scalability:** Avoid 1-to-$N$ HR personality/culture profiling surveys where managers are expected to memorize custom communication manuals for every employee (unscalable in practice, prone to social-desirability bias, and problematic under GDPR / *Betriebsrat*).
 2. **True game mechanics over "pointsification":** Avoid slapping XP and badges onto passive HR compliance checklists. Mechanics must create meaningful choices, feedback loops, and intrinsic motivation (Autonomy, Competence, Relatedness).
 3. **Built for Week 12 live playtesting:** Whatever we build—even if the enterprise version spans weeks—must have a self-contained **15–20 minute playable slice** for classmates in Week 12.
-4. **Pick the best medium for the concept:** Use code where software creates real scalability and classroom "wow" (e.g., QR-code multiplayer voting, simulated Slack/Inbox state, live crisis/market tickers), or combine digital + tabletop where face-to-face negotiation shines.
-5. **Academic & source integrity:** Every cited framework or cultural model (e.g., MDA, SDT, Flow, Octalysis, HEXAD, Meyer, Hofstede, Edmondson) must be verified against primary academic publications before inclusion in the report or essays.
+4. **Pick the best medium for the concept:** Use code where software creates real scalability and classroom "wow" (e.g., a team chat with logging, a live facilitator dashboard for the debrief), or combine digital + tabletop where it fits better (e.g., printed role cards).
+5. **Academic & source integrity:** Every cited framework or model (e.g., MDA, SDT, Flow, Octalysis, HEXAD, the hidden-profile paradigm) must be verified against primary academic publications before inclusion in the report or essays.
 
 ## Open Decisions
 
-- [ ] Lock in **1 final project concept** with the team (see [project-ideas.md](./project-ideas.md) for Week 3 topic approval).
+- [x] Lock in **1 final project concept** with the team: knowledge sharing in remote teams (see [project-ideas.md](./project-ideas.md); still needs Week 3 topic approval).
 - [ ] Confirm exact calendar dates for **Week 3 / Week 6 / Week 9 / Week 12 / Week 13 / Weeks 14–15**.
 - [ ] Decide whether to anchor the business case in the anonymized part-time company or a specific target industry.
 - [ ] Once the concept is locked, confirm the prototype medium and (if coded) the tech stack.
